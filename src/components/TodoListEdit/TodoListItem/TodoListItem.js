@@ -6,7 +6,7 @@ import {
   deleteTodoListItem,
   setCurrentEdited,
   completeTodoListItem
-} from '../../actions/todoListEditActions';
+} from '../../../actions/todoListEditActions';
 
 const TodoListItem = ({
   todoItem,

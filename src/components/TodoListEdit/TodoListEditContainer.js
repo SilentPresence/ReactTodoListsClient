@@ -2,7 +2,7 @@ import React, { useEffect, useState, Fragment } from 'react';
 import { Redirect } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import TodoListEdit from './TodoListEdit';
-import ProgressSpinner from '../layout/ProgressSpinner';
+import ProgressSpinner from '../layout/ProgressSpinner/ProgressSpinner';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import uuid from 'uuid';
@@ -17,7 +17,6 @@ import {
 } from '../../actions/todoListEditActions';
 
 const TodoListEditContainer = ({
-  match,
   todoListEdit: { todoList, loading, saveSuccess, toastMessage, error },
   getTodoList,
   addTodoListItem,

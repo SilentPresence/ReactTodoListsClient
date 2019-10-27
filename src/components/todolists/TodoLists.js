@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoListsItem from './TodoListsItem';
+import TodoListsItem from './TodoListsItem/TodoListsItem';
 const TodoLists = ({ todoLists }) => {
   return (
     <ul className='collection with-header'>

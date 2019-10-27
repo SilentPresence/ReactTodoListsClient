@@ -1,6 +1,6 @@
 import React, { useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import ProgressSpinner from '../layout/ProgressSpinner';
+import ProgressSpinner from '../layout/ProgressSpinner/ProgressSpinner';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getTodoLists } from '../../actions/todoListsActions';

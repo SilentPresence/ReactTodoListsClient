@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {
   deleteTodoLists,
   clearCurrentDeleted
-} from '../../actions/todoListsActions';
+} from '../../../actions/todoListsActions';
 
 const DeleteTodoListModal = ({
   todoList,

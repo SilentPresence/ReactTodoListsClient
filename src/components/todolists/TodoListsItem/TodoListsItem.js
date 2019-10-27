@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import {
   setCurrentDeleted,
   setCurrentViewed
-} from '../../actions/todoListsActions';
+} from '../../../actions/todoListsActions';
 const TodoListsItem = ({ todoList, setCurrentDeleted, setCurrentViewed }) => {
   return (
     <li className='collection-item'>

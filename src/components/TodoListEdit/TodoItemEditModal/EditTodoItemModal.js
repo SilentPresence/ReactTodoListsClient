@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import {
   updateTodoListItem,
   clearCurrentEdited
-} from '../../actions/todoListEditActions';
+} from '../../../actions/todoListEditActions';
 
-const EditTodoItemModal = ({
+const TodoItemEditModal = ({
   todoItem,
   updateTodoListItem,
   clearCurrentEdited
@@ -65,7 +65,7 @@ const EditTodoItemModal = ({
 // const modalStyle = {
 //   width: '50%'
 // };
-EditTodoItemModal.propTypes = {
+TodoItemEditModal.propTypes = {
   todoItem: PropTypes.object,
   updateTodoListItem: PropTypes.func.isRequired,
   clearCurrentEdited: PropTypes.func.isRequired
@@ -76,4 +76,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { updateTodoListItem, clearCurrentEdited }
-)(EditTodoItemModal);
+)(TodoItemEditModal);
