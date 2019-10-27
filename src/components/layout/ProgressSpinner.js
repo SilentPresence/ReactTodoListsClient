@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Preloader = () => {
+const ProgressSpinner = () => {
   return (
     <div className='center'>
       <div className='preloader-wrapper big active'>
@@ -56,4 +56,4 @@ const Preloader = () => {
   );
 };
 
-export default Preloader;
+export default ProgressSpinner;

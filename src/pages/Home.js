@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import TodoLists from '../components/todolists/TodoLists';
+import TodoListsContainer from '../components/todolists/TodoListsContainer';
 import DeleteTodoListModal from '../components/todolists/DeleteTodoListModal';
 import ViewTodoListModal from '../components/todolists/ViewTodoListModal';
 const Home = () => {
   return (
     <Fragment>
-      <TodoLists />
+      <TodoListsContainer />
       <DeleteTodoListModal />
       <ViewTodoListModal />
     </Fragment>

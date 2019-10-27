@@ -40,7 +40,9 @@ const EditTodoItemModal = ({
                 value={todo}
                 onChange={todoChange}
               />
-              <label {...labelCss} htmlFor='todoItem'>Todo</label>
+              <label {...labelCss} htmlFor='todoItem'>
+                Todo
+              </label>
             </div>
           </div>
         </form>

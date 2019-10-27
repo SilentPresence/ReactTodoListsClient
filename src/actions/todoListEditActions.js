@@ -11,8 +11,7 @@ import {
   UPDATE_TODO_LIST,
   COMPLETE_TODO_LIST_ITEM,
   SET_LOADING,
-  TODO_LIST_EDIT_UNLOADED,
-  SHOW_TOAST
+  TODO_LIST_EDIT_UNLOADED
 } from './types';
 import axios from 'axios';
 import uuid from 'uuid';

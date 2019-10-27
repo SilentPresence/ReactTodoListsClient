@@ -6,9 +6,7 @@ import {
   CLEAR_CURRENT_DELETED,
   TODO_LISTS_ERROR,
   SET_CURRENT_VIEWED,
-  SHOW_TOAST,
-  CLEAR_TOAST,
-  CLEAR_CURRENT_VIEWED
+  SHOW_TOAST
 } from './types';
 import axios from 'axios';
 
@@ -27,6 +25,7 @@ export const getTodoLists = () => async dispatch => {
     });
   }
 };
+
 export const deleteTodoLists = todoList => async dispatch => {
   try {
     setLoading();
@@ -46,23 +45,22 @@ export const deleteTodoLists = todoList => async dispatch => {
     });
   }
 };
+//Set the current todo list that will be viewed in a modal
 export const setCurrentViewed = todoList => {
   return {
     type: SET_CURRENT_VIEWED,
     payload: todoList
   };
 };
-export const clearCurrentViewed = () => {
-  return {
-    type: CLEAR_CURRENT_VIEWED
-  };
-};
-export const setCurrentDeleted = id => {
+
+//Set the todo list the will be deleted
+export const setCurrentDeleted = todoList => {
   return {
     type: SET_CURRENT_DELETED,
-    payload: id
+    payload: todoList
   };
 };
+//Clear the todo list that was going to be deleted
 export const clearCurrentDeleted = () => {
   return {
     type: CLEAR_CURRENT_DELETED

@@ -5,7 +5,6 @@ import {
   SET_CURRENT_DELETED,
   CLEAR_CURRENT_DELETED,
   SET_CURRENT_VIEWED,
-  CLEAR_CURRENT_VIEWED,
   SHOW_TOAST,
   CLEAR_TOAST,
   TODO_LISTS_ERROR
@@ -53,11 +52,6 @@ export default (state = initialState, action) => {
       return {
         ...state,
         currentViewed: action.payload
-      };
-    case CLEAR_CURRENT_VIEWED:
-      return {
-        ...state,
-        currentViewed: null
       };
     case SET_LOADING:
       return {

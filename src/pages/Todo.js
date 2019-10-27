@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import TodoListEdit from '../components/todolist-edit/TodoListEdit';
+import TodoListEditContainer from '../components/todolist-edit/TodoListEditContainer';
 import EditTodoItemModal from '../components/todolist-edit/EditTodoItemModal';
 const Todo = () => {
   return (
     <Fragment>
-      <TodoListEdit />
+      <TodoListEditContainer />
       <EditTodoItemModal />
     </Fragment>
   );
